@@ -42,6 +42,7 @@ jobs:
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
   deploy:
+    needs: build-and-push     # 🧠 job deploy sẽ đợi job build hoàn tất
     name: Pull image from ECR & deploy with Docker Compose
     runs-on: [self-hosted, linux]
 
@@ -61,8 +62,8 @@ jobs:
 
       - name: Pull image and start service
         run: |
-          docker-compose pull
-          docker-compose up -d
+          
+          docker compose up -d
 
       - name: Show running containers
         run: docker ps
