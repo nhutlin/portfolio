@@ -6,8 +6,6 @@ description: ""
 categories: ["Reading Papers"]
 tags: ["CIR", "llm", "visual"]
 ---
-{{< katex >}}
-
 # Vision-by-Language for Training-Free Compositional Image Retrieval
 
 - ArXiv: https://arxiv.org/abs/2310.09291
