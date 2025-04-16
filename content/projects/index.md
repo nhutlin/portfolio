@@ -28,7 +28,6 @@ I always try to find time to work and learn something new. Usually, most of thes
 <table>
     <thead>
         <tr>
-            <th>Logo</th>
             <th>Title</th>
             <th>Description</th>
             <th>References</th>
@@ -36,29 +35,20 @@ I always try to find time to work and learn something new. Usually, most of thes
     </thead>
     <tbody>
          <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="blowfish_logo.png"/></td>
             <td>
-              Blowfish
-              
-              Active
-              
+              DevSecOps for Web Application
             </td>
-            <td>A powerful, lightweight theme for Hugo built with Tailwind CSS.</td>
-            <td><a target="_blank" href="https://blowfish.page">site</a></br><a target="_blank" href="https://github.com/nunocoracao/blowfish">github</a></td>
+            <td>Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture</td>
+            <td></br><a target="_blank" href="https://gitlab.com/devops_project3453439">GitLab</a></td>
         </tr>
          <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="blowfish-tools.png"/></td>
             <td>
-              Blowfish-Tools
-              
-              Active
-              
+              CI/CD models
             </td>
-            <td>CLI to initialize a Blowfish project</td>
-            <td><a target="_blank" href="https://blowfish.page">site</a></br><a target="_blank" href="https://github.com/nunocoracao/blowfish-tools">github</a></br><a target="_blank" href="https://www.npmjs.com/package/blowfish-tools">NPM</a></td>
+            <td>Researching and evaluating CI/CD models using Instagram Clone source code</td>
+            <td><a target="_blank" href="https://github.com/nunocoracao/blowfish-tools">GitLab</a></td>
         </tr>
         <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="wormhole-logo-square.png"/></td>
             <td>
               Wormhole
             </td>

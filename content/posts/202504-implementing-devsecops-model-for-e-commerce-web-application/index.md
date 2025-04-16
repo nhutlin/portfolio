@@ -1,5 +1,5 @@
 ---
-title: "Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture"
+title: "Implementing DevSecOps model for E-Commerce Web Application"
 date: 2024-09-16T20:28:53+07:00
 draft: false
 description: ""

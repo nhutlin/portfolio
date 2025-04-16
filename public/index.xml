@@ -12,16 +12,6 @@
     <lastBuildDate>Thu, 31 Oct 2024 20:28:53 +0700</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Music</title>
-      <link>http://localhost:1313/music/</link>
-      <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
-      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
-      <guid>http://localhost:1313/music/</guid>
-      <description>&lt;p&gt;This is my go-to playlist for deep focus—a blend of lo-fi beats and calming nature sounds like rain, forest ambience, and ocean waves. The soft rhythms and organic background noises help create a peaceful workspace, block out distractions, and keep me in the zone while working or studying. It&amp;rsquo;s perfect for those quiet, productive hours when you just need to tune everything else out and flow. Here are the links if you want to listen.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>Projects</title>
       <link>http://localhost:1313/projects/</link>
       <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
@@ -33,10 +23,10 @@
     
     <item>
       <title>Reading Papers: CIReVL (ICLR 2024)</title>
-      <link>http://localhost:1313/posts/install/</link>
+      <link>http://localhost:1313/posts/202504-install/</link>
       <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
       <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
-      <guid>http://localhost:1313/posts/install/</guid>
+      <guid>http://localhost:1313/posts/202504-install/</guid>
       <description>&lt;h1 class=&#34;relative group&#34;&gt;Vision-by-Language for Training-Free Compositional Image Retrieval 
     &lt;div id=&#34;vision-by-language-for-training-free-compositional-image-retrieval&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
@@ -52,7 +42,7 @@
 &lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/ExplainableML/Vision_by_Language&#34; target=&#34;_blank&#34;&gt;https://github.com/ExplainableML/Vision_by_Language&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: A training-free, modular, and interpretable approach that leverages LLMs to enhance text-based queries for compositional image retrieval.&lt;/p&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/install/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/202504-install/feature.jpg" />
     </item>
     
     <item>
@@ -137,11 +127,11 @@
     </item>
     
     <item>
-      <title>Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture</title>
-      <link>http://localhost:1313/posts/pfsense/</link>
+      <title>Implementing DevSecOps model for E-Commerce Web Application</title>
+      <link>http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/</link>
       <pubDate>Mon, 16 Sep 2024 20:28:53 +0700</pubDate>
       <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
-      <guid>http://localhost:1313/posts/pfsense/</guid>
+      <guid>http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/</guid>
       <description>&lt;h1 class=&#34;relative group&#34;&gt;Pfsense, Client to Site &amp;amp;  Site to site 
     &lt;div id=&#34;pfsense-client-to-site---site-to-site&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
