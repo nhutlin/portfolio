@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture &middot; Linh Tran</title>
-  <meta name="title" content="Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture &middot; Linh Tran" />
+  <title>Install and config: Pfsense &middot; Gangi&#39;s</title>
+  <meta name="title" content="Install and config: Pfsense &middot; Gangi&#39;s" />
   
   
-  <meta name="keywords" content="CICD, devops, Microservices, " />
+  <meta name="keywords" content="firewall, devops, visual, " />
   
   
   <link rel="canonical" href="http://localhost:1313/posts/pfsense/" />
@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.9439a7f56629a30e6c995ceb51d2d581dcdc05cab08ac414076cd0a4389dc313d9f5327ccf998063b3bd6336488c62a71c7536bb4ab4df5723f585765fd2944b.css"
-    integrity="sha512-lDmn9WYpow5smVzrUdLVgdzcBcqwisQUB2zQpDidwxPZ9TJ8z5mAY7O9YzZIjGKnHHU2u0q031cj9YV2X9KUSw==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.59d2d4af6a47a16d8c6d998ee8baea3265a1cb5af978d75da51aadcd7cbdca5a5aa7cf8a6cd1b3d54bc1a943aa03373fa3c564db9d2509b0c18c531981ad6117.css"
+    integrity="sha512-WdLUr2pHoW2MbZmO6LrqMmWhy1r5eNddpRqtzXy9ylpap8&#43;KbNGz1UvBqUOqAzc/o8Vk250lCbDBjFMZga1hFw==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -70,21 +70,21 @@
   
   
   <meta property="og:url" content="http://localhost:1313/posts/pfsense/">
-  <meta property="og:site_name" content="Linh Tran">
-  <meta property="og:title" content="Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture">
+  <meta property="og:site_name" content="Gangi&#39;s">
+  <meta property="og:title" content="Install and config: Pfsense">
   <meta property="og:description" content="Pfsense, Client to Site &amp; Site to site #Table of contents #Pfsense, Client to Site &amp; Site to site Table of contents What is Pfsense ? Features in pfsense Setup firewall (Outscope) Initial setup General Information Time Server Configuration WAN Interface Configuration Configure LAN Interface Change the Admin password Save parameters Configure Interface Configure Rule and NAT(port-forward) I. Rule WAN interface II. Rule LAN interface Setup firewall (Inscope Non CDE) Build VPN Setup VPN Client to Site Step 1: Configure WAN interface Step 2: Create a Virtual IP Step 3: Create Certificate Authority – CA Step 4: Create Server Certificate Step 5: Create a VPN – OpenVPN Server Step 6: Create a VPN – OpenVPN Client Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client Step 8 : Create user OpenVPN Step 9: Configure access permissions in the VPN Step 10: Configure access to the VPN Step 11: Configure NAT outbound Step 12: Export the VPN Client installation package Step 13: Test the OpenVPN connection Setup VPN Site to site Setup Network on CMC-Cloud Site HCM Configure Interface OutScope, NonCDE, CDE Site HCM Configure the IPSec tunnel Site HCM Configure Firewall for local connections Site HCM Config Route table in CMC-Cloud on Site HCM Setup Network on CMC-Cloud Site HN Configure Interface OutScope, NonCDE, CDE Site HN Configure the IPSec tunnel Site HN Configure Firewall for local connections Site HN Config Route table in CMC-Cloud on Site HN Build VPN Route Base (Using OSPF) Routed IPsec (VTI) HANOI - Khanh’s zone (Vùng 1) - PHAN HCM - Khanh’s zone (Vùng 2) - GIANG HCM - Tram’s zone (Vùng 3) - TRI Step 1: Configure IPsec Tunnel on pfSense Step 2: Configure Phase 2 (Child SA) for VTI Create the VTI Interface Step 4: Firewall Rules for the VTI Interface Testing the VTI Tunnel Step 5: Setup for OSPF on pfSense with VTI I. Install the FRR Package on pfSense II. Configure FRR Global Settings III. Configure OSPF in FRR IV. Configure Static Routing in Pfsense V. Check status OSPF in FRR V. Check ping Build VPN With GRE-TUNNEL What is Pfsense ? #Pfsense: is an application that functions as a network firewall router and is free based on FreeBSD. Pfsense is configured through a web GUI interface for easy management and customization. It supports filtering based on source address, destination, source port, destination port, supports routing, and can operate in bridge or transparent mode.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-09-16T20:28:53+07:00">
-    <meta property="article:modified_time" content="2024-09-16T20:28:53+07:00">
-    <meta property="article:tag" content="CICD">
+    <meta property="article:published_time" content="2024-10-31T20:28:53+07:00">
+    <meta property="article:modified_time" content="2024-10-31T20:28:53+07:00">
+    <meta property="article:tag" content="Firewall">
     <meta property="article:tag" content="Devops">
-    <meta property="article:tag" content="Microservices">
+    <meta property="article:tag" content="Visual">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture">
+  <meta name="twitter:title" content="Install and config: Pfsense">
   <meta name="twitter:description" content="Pfsense, Client to Site &amp; Site to site #Table of contents #Pfsense, Client to Site &amp; Site to site Table of contents What is Pfsense ? Features in pfsense Setup firewall (Outscope) Initial setup General Information Time Server Configuration WAN Interface Configuration Configure LAN Interface Change the Admin password Save parameters Configure Interface Configure Rule and NAT(port-forward) I. Rule WAN interface II. Rule LAN interface Setup firewall (Inscope Non CDE) Build VPN Setup VPN Client to Site Step 1: Configure WAN interface Step 2: Create a Virtual IP Step 3: Create Certificate Authority – CA Step 4: Create Server Certificate Step 5: Create a VPN – OpenVPN Server Step 6: Create a VPN – OpenVPN Client Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client Step 8 : Create user OpenVPN Step 9: Configure access permissions in the VPN Step 10: Configure access to the VPN Step 11: Configure NAT outbound Step 12: Export the VPN Client installation package Step 13: Test the OpenVPN connection Setup VPN Site to site Setup Network on CMC-Cloud Site HCM Configure Interface OutScope, NonCDE, CDE Site HCM Configure the IPSec tunnel Site HCM Configure Firewall for local connections Site HCM Config Route table in CMC-Cloud on Site HCM Setup Network on CMC-Cloud Site HN Configure Interface OutScope, NonCDE, CDE Site HN Configure the IPSec tunnel Site HN Configure Firewall for local connections Site HN Config Route table in CMC-Cloud on Site HN Build VPN Route Base (Using OSPF) Routed IPsec (VTI) HANOI - Khanh’s zone (Vùng 1) - PHAN HCM - Khanh’s zone (Vùng 2) - GIANG HCM - Tram’s zone (Vùng 3) - TRI Step 1: Configure IPsec Tunnel on pfSense Step 2: Configure Phase 2 (Child SA) for VTI Create the VTI Interface Step 4: Firewall Rules for the VTI Interface Testing the VTI Tunnel Step 5: Setup for OSPF on pfSense with VTI I. Install the FRR Package on pfSense II. Configure FRR Global Settings III. Configure OSPF in FRR IV. Configure Static Routing in Pfsense V. Check status OSPF in FRR V. Check ping Build VPN With GRE-TUNNEL What is Pfsense ? #Pfsense: is an application that functions as a network firewall router and is free based on FreeBSD. Pfsense is configured through a web GUI interface for easy management and customization. It supports filtering based on source address, destination, source port, destination port, supports routing, and can operate in bridge or transparent mode.">
 
   
@@ -93,23 +93,23 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture",
-    "headline": "Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture",
+    "name": "Install and config: Pfsense",
+    "headline": "Install and config: Pfsense",
     
     "abstract": "\u003ch1 class=\u0022relative group\u0022\u003ePfsense, Client to Site \u0026amp;  Site to site \r\n    \u003cdiv id=\u0022pfsense-client-to-site---site-to-site\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\r\n    \r\n    \u003cspan\r\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\r\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\r\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#pfsense-client-to-site---site-to-site\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\r\n    \u003c\/span\u003e        \r\n    \r\n\u003c\/h1\u003e\r\n\r\n\r\n\u003ch2 class=\u0022relative group\u0022\u003eTable of contents \r\n    \u003cdiv id=\u0022table-of-contents\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\r\n    \r\n    \u003cspan\r\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\r\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\r\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#table-of-contents\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\r\n    \u003c\/span\u003e        \r\n    \r\n\u003c\/h2\u003e\r\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#pfsense-client-to-site---site-to-site\u0022\u003ePfsense, Client to Site \u0026amp;  Site to site\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#table-of-contents\u0022\u003eTable of contents\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#what-is-pfsense-\u0022\u003eWhat is Pfsense ?\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#features-in-pfsense\u0022\u003eFeatures in pfsense\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#setup-firewall-outscope\u0022\u003eSetup firewall (Outscope)\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#initial-setup\u0022\u003eInitial setup\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#general-information\u0022\u003eGeneral Information\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#time-server-configuration\u0022\u003eTime Server Configuration\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#wan-interface-configuration\u0022\u003eWAN Interface Configuration\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-lan-interface\u0022\u003eConfigure LAN Interface\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#change-the-admin-password\u0022\u003eChange the Admin password\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#save-parameters\u0022\u003eSave parameters\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-interface\u0022\u003eConfigure Interface\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-rule-and-natport-forward\u0022\u003eConfigure Rule and NAT(port-forward)\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#i-rule-wan-interface\u0022\u003eI. Rule WAN interface\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#ii-rule-lan-interface\u0022\u003eII. Rule LAN interface\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#setup-firewall-inscope-non-cde\u0022\u003eSetup firewall (Inscope Non CDE)\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#build-vpn\u0022\u003eBuild VPN\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#setup-vpn-client-to-site\u0022\u003eSetup VPN Client to Site\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#step-1-configure-wan-interface\u0022\u003eStep 1: Configure WAN interface\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-2-create-a-virtual-ip\u0022\u003eStep 2: Create a Virtual IP\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-3-create-certificate-authority--ca\u0022\u003eStep 3: Create Certificate Authority – CA\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-4-create-server-certificate\u0022\u003eStep 4: Create Server Certificate\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-5-create-a-vpn--openvpn-server\u0022\u003eStep 5: Create a VPN – OpenVPN Server\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-6-create-a-vpn--openvpn-client\u0022\u003eStep 6: Create a VPN – OpenVPN Client\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-7-install-the-openvpn-client-export-utility-a-tool-that-helps-export-the-vpn-client\u0022\u003eStep 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-8--create-user-openvpn\u0022\u003eStep 8 : Create user OpenVPN\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-9-configure-access-permissions-in-the-vpn\u0022\u003eStep 9: Configure access permissions in the VPN\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-10-configure-access-to-the-vpn\u0022\u003eStep 10: Configure access to the VPN\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-11-configure-nat-outbound\u0022\u003eStep 11: Configure NAT outbound\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-12-export-the-vpn-client-installation-package\u0022\u003eStep 12: Export the VPN Client installation package\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-13-test-the-openvpn-connection\u0022\u003eStep 13: Test the OpenVPN connection\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#setup-vpn-site-to-site\u0022\u003eSetup VPN Site to site\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#setup-network-on-cmc-cloud-site-hcm\u0022\u003eSetup Network on CMC-Cloud Site HCM\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-interface-outscope-noncde-cde-site-hcm\u0022\u003eConfigure Interface OutScope, NonCDE, CDE Site HCM\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-the-ipsec-tunnel-site-hcm\u0022\u003eConfigure the IPSec tunnel Site HCM\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-firewall-for-local-connections-site-hcm\u0022\u003eConfigure Firewall for local connections Site HCM\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#config-route-table-in-cmc-cloud-on-site-hcm\u0022\u003eConfig Route table in CMC-Cloud on Site HCM\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#setup-network-on-cmc-cloud-site-hn\u0022\u003eSetup Network on CMC-Cloud Site HN\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-interface-outscope-noncde-cde-site-hn\u0022\u003eConfigure Interface OutScope, NonCDE, CDE Site HN\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-the-ipsec-tunnel-site-hn\u0022\u003eConfigure the IPSec tunnel Site HN\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#configure-firewall-for-local-connections-site-hn\u0022\u003eConfigure Firewall for local connections Site HN\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#config-route-table-in-cmc-cloud-on-site-hn\u0022\u003eConfig Route table in CMC-Cloud on Site HN\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#build-vpn-route-base-using-ospf\u0022\u003eBuild VPN Route Base (Using OSPF)\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#routed-ipsec-vti\u0022\u003eRouted IPsec (VTI)\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#hanoi---khanhs-zone-v%c3%b9ng-1---phan\u0022\u003eHANOI - Khanh\u0026rsquo;s zone (Vùng 1) - PHAN\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#hcm---khanhs-zone-v%c3%b9ng-2---giang\u0022\u003eHCM - Khanh\u0026rsquo;s zone (Vùng 2) - GIANG\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#hcm---trams-zone-v%c3%b9ng-3---tri\u0022\u003eHCM - Tram\u0026rsquo;s zone (Vùng 3) - TRI\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-1-configure-ipsec-tunnel-on-pfsense\u0022\u003eStep 1: Configure IPsec Tunnel on pfSense\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-2-configure-phase-2-child-sa-for-vti\u0022\u003eStep 2: Configure Phase 2 (Child SA) for VTI\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#create-the-vti-interface\u0022\u003eCreate the VTI Interface\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-4-firewall-rules-for-the-vti-interface\u0022\u003eStep 4: Firewall Rules for the VTI Interface\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#testing-the-vti-tunnel\u0022\u003eTesting the VTI Tunnel\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#step-5-setup-for-ospf-on-pfsense-with-vti\u0022\u003eStep 5: Setup for OSPF on pfSense with VTI\u003c\/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#i-install-the-frr-package-on-pfsense\u0022\u003eI. Install the FRR Package on pfSense\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#ii-configure-frr-global-settings\u0022\u003eII. Configure FRR Global Settings\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#iii-configure-ospf-in-frr\u0022\u003eIII. Configure OSPF in FRR\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#iv-configure-static-routing-in-pfsense\u0022\u003eIV. Configure Static Routing in Pfsense\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#v-check-status-ospf-in-frr\u0022\u003eV. Check status OSPF in FRR\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#v-check-ping\u0022\u003eV. Check ping\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#build-vpn-with-gre-tunnel\u0022\u003eBuild VPN With GRE-TUNNEL\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\r\n\r\n\u003ch3 class=\u0022relative group\u0022\u003eWhat is Pfsense ? \r\n    \u003cdiv id=\u0022what-is-pfsense-\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\r\n    \r\n    \u003cspan\r\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\r\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\r\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#what-is-pfsense-\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\r\n    \u003c\/span\u003e        \r\n    \r\n\u003c\/h3\u003e\r\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003ePfsense\u003c\/code\u003e\u003c\/strong\u003e: is an application that functions as a network firewall router and is free based on \u003ccode\u003eFreeBSD\u003c\/code\u003e. Pfsense is configured through a web GUI interface for easy management and customization. It supports filtering based on source address, destination, source port, destination port, supports routing, and can operate in bridge or transparent mode.\u003c\/p\u003e",
     "inLanguage": "en",
     "url" : "http:\/\/localhost:1313\/posts\/pfsense\/",
     "author" : {
       "@type": "Person",
-      "name": "Linh Tran-Nhut"
+      "name": "Truong-Giang Nguyen"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-09-16T20:28:53\u002b07:00",
-    "datePublished": "2024-09-16T20:28:53\u002b07:00",
+    "dateCreated": "2024-10-31T20:28:53\u002b07:00",
+    "datePublished": "2024-10-31T20:28:53\u002b07:00",
     
-    "dateModified": "2024-09-16T20:28:53\u002b07:00",
+    "dateModified": "2024-10-31T20:28:53\u002b07:00",
     
-    "keywords": ["CICD","devops","Microservices"],
+    "keywords": ["firewall","devops","visual"],
     
     "mainEntityOfPage": "true",
     "wordCount": "6095"
@@ -119,20 +119,17 @@
 
   
   
-  <meta name="author" content="Linh Tran-Nhut" />
+  <meta name="author" content="Truong-Giang Nguyen" />
   
   
   
-  <link href="mailto:nhutlinh.work@gmail.com" rel="me" />
+  <link href="mailto:giangnt1891@gmail.com" rel="me" />
   
   
-  <link href="https://github.com/nhutlin" rel="me" />
+  <link href="https://github.com/giang2424" rel="me" />
   
   
-  <link href="https://gitlab.com/nhutlin" rel="me" />
-  
-  
-  <link href="https://linkedin.com/in/tran-nhut-linh-04635b213" rel="me" />
+  <link href="https://linkedin.com/in/gangint" rel="me" />
   
   
   
@@ -314,14 +311,18 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
     
     <div class="flex flex-1 items-center justify-between">
         <nav class="flex space-x-3">
 
             
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Linh Tran</a>
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Gangi&rsquo;s</a>
             
 
         </nav>
@@ -367,6 +368,17 @@
     
     <p class="text-base font-medium" title="Resume">
         Resume
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/music/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Music">
+        Music
     </p>
 </a>
 
@@ -565,6 +577,21 @@
 
                     
 
+                    
+  <li class="mt-1">
+    <a href="/music/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Music">
+            Music
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
                 </ul>
                 
                 
@@ -588,6 +615,16 @@
 </script>
 
 
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -607,10 +644,34 @@
   
  
 
-        
-            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/img/banner.png);"></div>
-        
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+
     
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/img/banner.png);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
   
   
 
@@ -627,7 +688,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/"
-      >Linh Tran</a
+      >Gangi&#39;s</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -645,7 +706,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/posts/pfsense/"
-      >Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture</a
+      >Install and config: Pfsense</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -654,7 +715,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture
+      Install and config: Pfsense
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -699,7 +760,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-16T20:28:53&#43;07:00">16 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">29 mins</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-10-31T20:28:53&#43;07:00">31 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">29 mins</span><span class="px-2 text-primary-500">&middot;</span>
 
 
   
@@ -770,10 +831,10 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cicd/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/firewall/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    CICD
+    Firewall
   </span>
 </span>
   </span>
@@ -786,10 +847,10 @@
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/microservices/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/visual/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Microservices
+    Visual
   </span>
 </span>
   </span>
@@ -3631,7 +3692,7 @@ If the service runs on two ports, <code>80 (HTTP)</code> and <code>443 (HTTPS)</
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/S2S/route_hcm_1.1.png"
+        src="/posts/pfsense/Imgs/S2S/route_hcm_1.png"
         alt="alt text"
       />
       
@@ -3650,7 +3711,23 @@ If the service runs on two ports, <code>80 (HTTP)</code> and <code>443 (HTTPS)</
 </p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/S2S/route_hcm_1.2.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/S2S/route_hcm_1.2.png"
+        alt="alt text"
+      />
+      
+    </figure>
+</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/S2S/route_hcm_2.png"
+        alt="alt text"
+      />
       
     </figure>
 </p>
@@ -3670,7 +3747,7 @@ If the service runs on two ports, <code>80 (HTTP)</code> and <code>443 (HTTPS)</
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/S2S/route_hcm_2.1.png"
+        src="/posts/pfsense/Imgs/S2S/route_hcm_3.png"
         alt="alt text"
       />
       
@@ -3692,15 +3769,9 @@ If the service runs on two ports, <code>80 (HTTP)</code> and <code>443 (HTTPS)</
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/S2S/route_hcm_3.1.png"
+        src="/posts/pfsense/Imgs/S2S/route_hcm_3.2.png"
         alt="alt text"
       />
-      
-    </figure>
-</p>
-<p>
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/S2S/route_hcm_3.2.png" alt="alt text" />
       
     </figure>
 </p>
@@ -3709,7 +3780,7 @@ If the service runs on two ports, <code>80 (HTTP)</code> and <code>443 (HTTPS)</
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/S2S/route_hcm_5.1.png"
+        src="/posts/pfsense/Imgs/S2S/route_hcm_5.png"
         alt="alt text"
       />
       
@@ -4745,7 +4816,7 @@ Imgs/S2S-HN/hn23.png</p>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/Route-base/vti_1.1.png"
+        src="/posts/pfsense/Imgs/Route-base/vti_1.png"
         alt="vti"
       />
       
@@ -4755,7 +4826,7 @@ Imgs/S2S-HN/hn23.png</p>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/Route-base/vti_2.2.png"
+        src="/posts/pfsense/Imgs/Route-base/vti_2.png"
         alt="vti"
       />
       
@@ -4765,7 +4836,7 @@ Imgs/S2S-HN/hn23.png</p>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/Route-base/vti_3.3.png"
+        src="/posts/pfsense/Imgs/Route-base/vti_3.png"
         alt="vti"
       />
       
@@ -4775,7 +4846,7 @@ Imgs/S2S-HN/hn23.png</p>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/Route-base/vti_4.4.png"
+        src="/posts/pfsense/Imgs/Route-base/vti_4.png"
         alt="vti"
       />
       
@@ -4958,7 +5029,7 @@ Imgs/S2S-HN/hn23.png</p>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/Route-base/vti_p2_2.2.png"
+        src="/posts/pfsense/Imgs/Route-base/vti_p2_2.png"
         alt="alt text"
       />
       
@@ -5009,17 +5080,32 @@ Imgs/S2S-HN/hn23.png</p>
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_p2_2.2_1.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_p2_2.2_1.png"
+        alt="alt text"
+      />
       
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_p2_2.2_2.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_p2_2.2_2.png"
+        alt="alt text"
+      />
       
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_p2_2.2_3.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_p2_2.2_3.png"
+        alt="alt text"
+      />
       
     </figure>
 </p>
@@ -5798,7 +5884,7 @@ Enable FRR on all 3 zones</p></blockquote>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone1.1.png"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone1.png"
         alt="alt text"
       />
       
@@ -5815,17 +5901,32 @@ Enable FRR on all 3 zones</p></blockquote>
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone1.2.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone1.2.png"
+        alt="alt text"
+      />
       
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone1.3.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone1.3.png"
+        alt="alt text"
+      />
       
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone1.4.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone1.4.png"
+        alt="alt text"
+      />
       
     </figure>
 </p>
@@ -5836,7 +5937,7 @@ Enable FRR on all 3 zones</p></blockquote>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone2.1.png"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone2.png"
         alt="alt text"
       />
       
@@ -5853,17 +5954,32 @@ Enable FRR on all 3 zones</p></blockquote>
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone2.2.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone2.2.png"
+        alt="alt text"
+      />
       
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone2.3.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone2.3.png"
+        alt="alt text"
+      />
       
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone2.4.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone2.4.png"
+        alt="alt text"
+      />
       
     </figure>
 </p>
@@ -5874,7 +5990,7 @@ Enable FRR on all 3 zones</p></blockquote>
       <img
         class="my-0 rounded-md"
         loading="lazy"
-        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone3.1.png"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone3.png"
         alt="alt text"
       />
       
@@ -5891,17 +6007,32 @@ Enable FRR on all 3 zones</p></blockquote>
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone3.2.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone3.2.png"
+        alt="alt text"
+      />
       
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone3.3.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone3.3.png"
+        alt="alt text"
+      />
       
     </figure>
 
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="Imgs/Route-base/vti_ospf_stt_zone3.4.png" alt="alt text" />
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        src="/posts/pfsense/Imgs/Route-base/vti_ospf_stt_zone3.4.png"
+        alt="alt text"
+      />
       
     </figure>
 </p>
@@ -6084,7 +6215,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/pfsense/&amp;title=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application%20using%20MERN%20Stack%20and%20Microservices%20Architecture"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/pfsense/&amp;title=Install%20and%20config:%20Pfsense"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -6103,7 +6234,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/pfsense/&amp;text=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application%20using%20MERN%20Stack%20and%20Microservices%20Architecture"
+      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/pfsense/&amp;text=Install%20and%20config:%20Pfsense"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -6121,7 +6252,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/pfsense/&amp;resubmit=true&amp;title=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application%20using%20MERN%20Stack%20and%20Microservices%20Architecture"
+      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/pfsense/&amp;resubmit=true&amp;title=Install%20and%20config:%20Pfsense"
       title="Share via WhatsApp"
       aria-label="Share via WhatsApp"
       >
@@ -6140,7 +6271,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=http://localhost:1313/posts/pfsense/&amp;resubmit=true&amp;title=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application%20using%20MERN%20Stack%20and%20Microservices%20Architecture"
+      href="https://t.me/share/url?url=http://localhost:1313/posts/pfsense/&amp;resubmit=true&amp;title=Install%20and%20config:%20Pfsense"
       title="Share via Telegram"
       aria-label="Share via Telegram"
       >
@@ -6159,7 +6290,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/pfsense/&amp;description=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application%20using%20MERN%20Stack%20and%20Microservices%20Architecture"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/pfsense/&amp;description=Install%20and%20config:%20Pfsense"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -6178,7 +6309,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=http://localhost:1313/posts/pfsense/&amp;resubmit=true&amp;title=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application%20using%20MERN%20Stack%20and%20Microservices%20Architecture"
+      href="https://reddit.com/submit/?url=http://localhost:1313/posts/pfsense/&amp;resubmit=true&amp;title=Install%20and%20config:%20Pfsense"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -6197,7 +6328,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/pfsense/&amp;quote=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application%20using%20MERN%20Stack%20and%20Microservices%20Architecture"
+      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/pfsense/&amp;quote=Install%20and%20config:%20Pfsense"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -6216,7 +6347,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=http://localhost:1313/posts/pfsense/&amp;subject=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application%20using%20MERN%20Stack%20and%20Microservices%20Architecture"
+      href="mailto:?body=http://localhost:1313/posts/pfsense/&amp;subject=Install%20and%20config:%20Pfsense"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -6237,6 +6368,421 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
         
 
 
+<h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2>
+<section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  
+  
+
+  <a href="/posts/install/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/install/">Reading Papers: CIReVL (ICLR 2024)</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-31T20:28:53&#43;07:00">31 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/reading-papers/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Reading Papers
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cir/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CIR
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/llm/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Llm
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/visual/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Visual
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/music/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/music/">Music</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/projects/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/projects/">Projects</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+  
+
+  <a href="/resume/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/resume/">Resume</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+
+  
+</section>
+
   
       </div>
      
@@ -6248,8 +6794,8 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
           
         
       <script>
-        var oid = "views_posts\/Pfsense\/index.md"
-        var oid_likes = "likes_posts\/Pfsense\/index.md"
+        var oid = "views_posts\\Pfsense\\index.md"
+        var oid_likes = "likes_posts\\Pfsense\\index.md"
       </script>
       
       
@@ -6269,7 +6815,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/202109-the-future-of-nintendo/">
+            <a class="flex group mr-3" href="/posts/install/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -6281,23 +6827,6 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >The Future of the Nintendo Switch</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2021-09-09T00:00:00&#43;00:00">9 September 2021</time>
-                  
-                </span>
-              </span>
-            </a>
-          
-        </span>
-        <span>
-          
-            <a class="flex text-right group ml-3" href="/posts/install/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
                   >Reading Papers: CIReVL (ICLR 2024)</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
@@ -6306,15 +6835,10 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
                   
                 </span>
               </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
             </a>
+          
+        </span>
+        <span>
           
         </span>
       </div>
@@ -6375,7 +6899,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
       &copy;
       2025
-      Linh Tran-Nhut
+      Truong-Giang Nguyen
     </p>
     
 
@@ -6463,7 +6987,7 @@ The GRE protocol was originally designed by Cisco, and it is the default tunneli
 </body>
 
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-  data-id="nhutlinh231" data-description="Support me on Buy me a coffee!" data-message=""
+  data-id="gangi" data-description="Support me on Buy me a coffee!" data-message=""
   data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 </html>
