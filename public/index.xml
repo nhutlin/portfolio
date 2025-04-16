@@ -17,7 +17,7 @@
       <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
       <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
       <guid>http://localhost:1313/projects/</guid>
-      <description>&lt;p&gt;I always try to find time to work and learn something new. Usually, most of these &lt;em&gt;pet-projects&lt;/em&gt; don&amp;rsquo;t see the light of day. They are, however, great opportunities to try something in the real world and learn from it.&lt;/p&gt;</description>
+      <description>&lt;p&gt;These are personal projects I’ve built based on concepts, tools, or practices I’ve worked with in production environments at my company. While they aren’t deployed in production themselves, they reflect real-world challenges and solutions I’ve encountered professionally.&lt;/p&gt;</description>
       
     </item>
     
@@ -272,7 +272,11 @@
       <pubDate>Mon, 13 Jun 2022 20:55:37 +0700</pubDate>
       <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;With one year of experience in DevOps, I have been involved in deploying and managing infrastructure for banking projects at Ban Viet Bank and OCB Bank. I am passionate about automating workflows, optimizing system performance, and ensuring stability and security in production environments.&lt;/p&gt;</description>
+      <description>&lt;h3 class=&#34;relative group&#34;&gt;About me 
+    &lt;div id=&#34;about-me&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+&lt;/h3&gt;
+&lt;p&gt;With one year of experience in DevOps, I have been involved in deploying and managing infrastructure for banking projects at Ban Viet Bank and OCB Bank. I am passionate about automating workflows, optimizing system performance, and ensuring stability and security in production environments.&lt;/p&gt;</description>
       
     </item>
     

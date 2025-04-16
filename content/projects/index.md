@@ -7,7 +7,7 @@ showDate : false
 showDateOnlyInArticle : false
 showDateUpdated : false
 showHeadingAnchors : false
-showPagination : false
+showPagination : true
 showReadingTime : false
 showTableOfContents : true
 showTaxonomies : false 
@@ -23,7 +23,7 @@ layoutBackgroundHeaderSpace: false
 
 ---
 
-I always try to find time to work and learn something new. Usually, most of these _pet-projects_ don't see the light of day. They are, however, great opportunities to try something in the real world and learn from it.
+These are personal projects I’ve built based on concepts, tools, or practices I’ve worked with in production environments at my company. While they aren’t deployed in production themselves, they reflect real-world challenges and solutions I’ve encountered professionally.
 
 <table>
     <thead>
@@ -31,15 +31,25 @@ I always try to find time to work and learn something new. Usually, most of thes
             <th>Title</th>
             <th>Description</th>
             <th>References</th>
+            <th>Timeline</th>
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>
+              OpenSCAP Tool
+            </td>
+            <td>Integrating and evaluating OpenSCAP in CI/CD models - Graduation Thesis Project</td>
+            <td><a target="_blank" href="https://wormhole-black.vercel.app/">site</a></br><a target="_blank" href="https://github.com/wormhole-photos">GitLab</a></td>
+            <td>Jan 2025 - Present</td>
+        </tr>
          <tr>
             <td>
               DevSecOps for Web Application
             </td>
             <td>Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture</td>
-            <td></br><a target="_blank" href="https://gitlab.com/devops_project3453439">GitLab</a></td>
+            <td><a target="_blank" href="https://gitlab.com/devops_project3453439">GitLab</a></td>
+            <td>Sep 2024 - Dec 2025</td>
         </tr>
          <tr>
             <td>
@@ -47,13 +57,7 @@ I always try to find time to work and learn something new. Usually, most of thes
             </td>
             <td>Researching and evaluating CI/CD models using Instagram Clone source code</td>
             <td><a target="_blank" href="https://github.com/nhutlin/Instagram-mern-CICD">GitHub</a></td>
-        </tr>
-        <tr>
-            <td>
-              Wormhole
-            </td>
-            <td>A wormhole into the universe - web feed for deep space photography</td>
-            <td><a target="_blank" href="https://wormhole-black.vercel.app/">site</a></br><a target="_blank" href="https://github.com/wormhole-photos">github</a></td>
+            <td>Jan 2024 - May 2024</td>
         </tr>
     </tbody>
 </table>
