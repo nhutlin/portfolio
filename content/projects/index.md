@@ -46,7 +46,7 @@ I always try to find time to work and learn something new. Usually, most of thes
               CI/CD models
             </td>
             <td>Researching and evaluating CI/CD models using Instagram Clone source code</td>
-            <td><a target="_blank" href="https://github.com/nunocoracao/blowfish-tools">GitLab</a></td>
+            <td><a target="_blank" href="https://github.com/nhutlin/Instagram-mern-CICD">GitHub</a></td>
         </tr>
         <tr>
             <td>

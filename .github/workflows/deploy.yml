@@ -62,7 +62,8 @@ jobs:
 
       - name: Pull image and start service
         run: |
-          
+          docker compose down
+          docker system prune -af
           docker compose up -d
 
       - name: Show running containers
