@@ -3,7 +3,7 @@ title: "Posts"
 date: 2024-10-31T20:28:53+07:00
 draft: false
 
-showDate : false
+showDate : true
 showDateUpdated : false
 showHeadingAnchors : false
 showPagination : true

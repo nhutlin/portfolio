@@ -6,7 +6,29 @@
         box-shadow: 10px 10px 30px 2px rgba(0, 0, 0, 0.6);
     }
 
-
+    .max-w-prose {
+        max-width: 150ch;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      .ml-auto {
+        margin-left: auto;
+      }
+      
+      .lg\:ml-auto {
+        margin-left: auto;
+      }
+      .max-w-full {
+      
+      }
+      
+      body * {
+        justify-content: center;
+      }
+      
     .customEntitityLogo {
         background-color: aliceblue;
         position: relative;
@@ -123,12 +145,11 @@
     }
 
     .customProfilePicture {
+        margin-top: 0;
+        margin-bottom: 0;
         position: relative;
-        min-width: 200px;
-        width: 500px;
+        min-width: 350px;
         height: 600px;
-        margin-left: auto; /* đẩy phần tử sang rìa phải */
-        padding: 0px;
         object-fit: contain;
         border-radius: 4%;
     }

@@ -1,14 +1,14 @@
 ---
-title: "Reading Papers: CIReVL (ICLR 2024)"
+title: "Install Wazuh and Wazuh Agent by Ansible"
 date: 2024-10-31T20:28:53+07:00
 draft: false
 description: ""
-categories: ["Reading Papers"]
-tags: ["CIR", "llm", "visual"]
+categories: ["Document"]
+tags: ["ansible", "wazuh", "linux"]
 ---
-# Vision-by-Language for Training-Free Compositional Image Retrieval
+# Comming soon...
 
-- ArXiv: https://arxiv.org/abs/2310.09291
+<!-- - ArXiv: https://arxiv.org/abs/2310.09291
 - GitHub: https://github.com/ExplainableML/Vision_by_Language
 
 **TL;DR**: A training-free, modular, and interpretable approach that leverages LLMs to enhance text-based queries for compositional image retrieval.
@@ -50,4 +50,4 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
 
 
 ## Reference
-- [Vision-by-Language for Training-Free Compositional Image Retrieval | ICLR 2024](https://arxiv.org/abs/2310.09291)
+- [Vision-by-Language for Training-Free Compositional Image Retrieval | ICLR 2024](https://arxiv.org/abs/2310.09291) -->

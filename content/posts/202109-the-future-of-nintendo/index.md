@@ -11,11 +11,9 @@ authors:
   - nunocoracao
 ---
 
-Nintendo achieved something truly amazing with the launch of the Switch. It was able to disrupt itself and the entire gaming industry while saving itself from doom. How exactly was Nintendo able to do it and what comes next in that story?
+## Comming soon...
 
-## A Little History...
-
-![Super Nintendo](supernintendo.jpg)
+<!-- ![Super Nintendo](supernintendo.jpg)
 
 Nintendo is a Japanese multinational consumer electronics and video game company with headquarters in Kyoto, Japan. In its annual report for 2021, the company reported a revenue of $16 billion (¥1,759 trillion) and it currently employs around six thousand people around the world across several different business units. 
 
@@ -85,4 +83,4 @@ Ultimately, the common factor across all of Nintendo’s decisions and actions h
 
 [Wikipedia. “List of best-selling game consoles.”](https://en.wikipedia.org/wiki/List_of_best-selling_game_consoles)
 
-[Wikipedia. “List of best-selling Nintendo Switch video games.”](https://en.wikipedia.org/wiki/List_of_best-selling_Nintendo_Switch_video_games)
+[Wikipedia. “List of best-selling Nintendo Switch video games.”](https://en.wikipedia.org/wiki/List_of_best-selling_Nintendo_Switch_video_games) -->
