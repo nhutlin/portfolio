@@ -39,7 +39,7 @@ I always try to find time to work and learn something new. Usually, most of thes
             <td><img class="customEntitityAlbum" style="background-color:transparent" src="blowfish_logo.png"/></td>
             <td>
               Blowfish
-              {{< badge >}}
+              
               Active
               {{< /badge >}}
             </td>
@@ -50,7 +50,7 @@ I always try to find time to work and learn something new. Usually, most of thes
             <td><img class="customEntitityAlbum" style="background-color:transparent" src="blowfish-tools.png"/></td>
             <td>
               Blowfish-Tools
-              {{< badge >}}
+              
               Active
               {{< /badge >}}
             </td>
