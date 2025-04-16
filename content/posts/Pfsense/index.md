@@ -6,8 +6,6 @@ description: ""
 categories: ["Document"]
 tags: ["CICD", "devops", "Microservices"]
 ---
-{{< katex >}}
-
 
 # Pfsense, Client to Site &  Site to site
 
