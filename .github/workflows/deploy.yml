@@ -60,6 +60,9 @@ jobs:
       - name: Login to Amazon ECR
         uses: aws-actions/amazon-ecr-login@v2
 
+      - name: Debug
+        run: whoami
+        
       - name: Pull image and start service
         run: |
           docker compose down
