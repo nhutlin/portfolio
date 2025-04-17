@@ -1,7 +1,7 @@
 ---
-title: "The Future of the Nintendo Switch"
-description: "Nintendo achieved something truly amazing with the launch of the Switch. It was able to disrupt itself and the entire gaming industry while saving itself from doom. How exactly was Nintendo able to do it and what comes next in that story?"
-summary: "Nintendo achieved something truly amazing with the launch of the Switch. It was able to disrupt itself and the entire gaming industry while saving itself from doom. How exactly was Nintendo able to do it and what comes next in that story?"
+title: "Install Kafka Exporter, Redis Exporter, HAProxy Exporter"
+# description: "Nintendo achieved something truly amazing with the launch of the Switch. It was able to disrupt itself and the entire gaming industry while saving itself from doom. How exactly was Nintendo able to do it and what comes next in that story?"
+# summary: "Nintendo achieved something truly amazing with the launch of the Switch. It was able to disrupt itself and the entire gaming industry while saving itself from doom. How exactly was Nintendo able to do it and what comes next in that story?"
 categories: ["Strategy", "Product"]
 tags: ["Nintendo", "Switch", "Disruptive Innovation"]
 #externalUrl: ""
