@@ -1,14 +1,13 @@
 ---
-title: "Install Kafka Exporter, Redis Exporter, HAProxy Exporter"
+title: "Installing Kafka Exporter, Postgres Exporter, Redis Exporter, HAProxy Exporter"
 # description: "Nintendo achieved something truly amazing with the launch of the Switch. It was able to disrupt itself and the entire gaming industry while saving itself from doom. How exactly was Nintendo able to do it and what comes next in that story?"
 # summary: "Nintendo achieved something truly amazing with the launch of the Switch. It was able to disrupt itself and the entire gaming industry while saving itself from doom. How exactly was Nintendo able to do it and what comes next in that story?"
-categories: ["Strategy", "Product"]
-tags: ["Nintendo", "Switch", "Disruptive Innovation"]
+categories: ["Automation"]
+tags: ["Scripting", "Linux"]
 #externalUrl: ""
-date: 2021-09-09
+date: 2025-03-22
 draft: false
-authors:
-  - nunocoracao
+
 ---
 
 ## Comming soon...

@@ -2,7 +2,7 @@
 title: "About"
 date: 2022-06-13T20:55:37+07:00
 draft: false
-
+background: "img/background.svg"
 showDate : true
 showDateOnlyInArticle : true
 showDateUpdated : false

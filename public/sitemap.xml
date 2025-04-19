@@ -3,157 +3,126 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:32959/categories/automation/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:32959/categories/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:32959/posts/202109-the-future-of-nintendo/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:32959/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:32959/tags/linux/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:32959/tags/scripting/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:32959/tags/</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:32959/tags/ansible/</loc>
     <lastmod>2024-10-31T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/cir/</loc>
+    <loc>http://localhost:32959/categories/document/</loc>
     <lastmod>2024-10-31T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:32959/posts/202504-install/</loc>
     <lastmod>2024-10-31T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/llm/</loc>
+    <loc>http://localhost:32959/posts/</loc>
     <lastmod>2024-10-31T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:32959/projects/</loc>
     <lastmod>2024-10-31T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:32959/resume/</loc>
     <lastmod>2024-10-31T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/categories/reading-papers/</loc>
+    <loc>http://localhost:32959/tags/wazuh/</loc>
     <lastmod>2024-10-31T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/202504-install/</loc>
-    <lastmod>2024-10-31T20:28:53+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/resume/</loc>
-    <lastmod>2024-10-31T20:28:53+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-10-31T20:28:53+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/visual/</loc>
-    <lastmod>2024-10-31T20:28:53+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/cicd/</loc>
+    <loc>http://localhost:32959/tags/cicd/</loc>
     <lastmod>2024-09-16T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/devops/</loc>
+    <loc>http://localhost:32959/tags/devops/</loc>
     <lastmod>2024-09-16T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/categories/document/</loc>
+    <loc>http://localhost:32959/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/</loc>
     <lastmod>2024-09-16T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/</loc>
+    <loc>http://localhost:32959/tags/microservices/</loc>
     <lastmod>2024-09-16T20:28:53+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/microservices/</loc>
-    <lastmod>2024-09-16T20:28:53+07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:32959/about/</loc>
     <lastmod>2022-06-13T20:55:37+07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/authors/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:32959/authors/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/disruptive-innovation/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/nintendo/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/authors/nunocoracao/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/categories/product/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/categories/strategy/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/switch/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/posts/202109-the-future-of-nintendo/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>http://localhost:32959/series/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

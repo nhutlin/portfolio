@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=32959&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="ansible, wazuh, linux, " />
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/202504-install/" />
+  <link rel="canonical" href="http://localhost:32959/posts/202504-install/" />
   
   
   
@@ -69,7 +69,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/posts/202504-install/">
+  <meta property="og:url" content="http://localhost:32959/posts/202504-install/">
   <meta property="og:site_name" content="Linh Tran">
   <meta property="og:title" content="Install Wazuh and Wazuh Agent by Ansible">
   <meta property="og:description" content="Comming soon… #">
@@ -81,11 +81,11 @@
     <meta property="article:tag" content="Ansible">
     <meta property="article:tag" content="Wazuh">
     <meta property="article:tag" content="Linux">
-    <meta property="og:image" content="http://localhost:1313/posts/202504-install/feature.jpg">
+    <meta property="og:image" content="http://localhost:32959/posts/202504-install/feature.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/posts/202504-install/feature.jpg">
+  <meta name="twitter:image" content="http://localhost:32959/posts/202504-install/feature.jpg">
   <meta name="twitter:title" content="Install Wazuh and Wazuh Agent by Ansible">
   <meta name="twitter:description" content="Comming soon… #">
 
@@ -100,7 +100,7 @@
     
     "abstract": "\u003ch1 class=\u0022relative group\u0022\u003eComming soon\u0026hellip; \r\n    \u003cdiv id=\u0022comming-soon\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\r\n    \r\n    \u003cspan\r\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\r\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\r\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#comming-soon\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\r\n    \u003c\/span\u003e        \r\n    \r\n\u003c\/h1\u003e\r\n\u003c!-- - ArXiv: https:\/\/arxiv.org\/abs\/2310.09291\n- GitHub: https:\/\/github.com\/ExplainableML\/Vision_by_Language\n\n**TL;DR**: A training-free, modular, and interpretable approach that leverages LLMs to enhance text-based queries for compositional image retrieval.\n\n\u003e **Note:** This is my personal learning note, so **some points may not be entirely accurate**. I strive to improve my understanding and will correct any errors I find. If you spot any inaccuracies, please feel free to share your insights to help enhance the content 😊.\n\n## Summary\n\nThe paper introduces **CIReVL** (Compositional Image Retrieval through Vision-by-Language), a novel zero-shot compositional image retrieval (ZS-CIR) method. CIReVL leverages existing pre-trained vision-language models (VLMs) and large language models (LLMs) to **perform CIR without any additional training**.\n\n\n## Motivation\n\nTraditional CIR approaches rely on **supervised training** with annotated triplets (query image, modifying text, target image), which are **expensive and time-consuming** to obtain. Existing ZS-CIR methods often still require training task-specific modules on large image-caption datasets. **CIReVL** addresses these limitations by using **only pre-trained models** in a **modular, interpretable** fashion, offering a more accessible alternative.\n\n\n## Methodology\n\n![CIReVL Workflow](.\/cirevl.png)\n\nCIReVL operates through three main steps:\n\n1. **Captioning:** A pre-trained VLM (e.g., BLIP-2) generates a detailed caption for the query image.\n2. **Reasoning:** An LLM (e.g., GPT-3.5-turbo) processes the generated caption and modification instruction to produce a target caption that reflects the intended changes.\n3. **Retrieval:** A second VLM (e.g., CLIP) encodes the target caption and the database images to retrieve the image most similar to the target description.\n\n\n## Why CIReVL Stands Out\n\n- **Training-Free:** CIReVL doesn’t require any additional training, relying entirely on off-the-shelf pre-trained models, which enhances efficiency and scalability.\n- **Modular Design:** This modular approach allows easy replacement or scaling of individual components, enabling exploration of different VLMs and LLMs.\n- **Human-Interpretable:** Most of the compositional processing occurs in the language domain, making it interpretable and allowing for human intervention in case of potential errors.\n- **State-of-the-Art Performance:** CIReVL matches or surpasses existing training-based and zero-shot methods on several CIR benchmarks, including CIRCO, CIRR, FashionIQ, and GeneCIS.\n\n\n## Conclusion\n\nCIReVL presents a promising new direction for zero-shot CIR research. Its training-free, modular, and interpretable design, along with its high performance, makes it a compelling approach for future work in ZS-CIR.\n\n\n## Reference\n- [Vision-by-Language for Training-Free Compositional Image Retrieval | ICLR 2024](https:\/\/arxiv.org\/abs\/2310.09291) --\u003e",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/posts\/202504-install\/",
+    "url" : "http:\/\/localhost:32959\/posts\/202504-install\/",
     "author" : {
       "@type": "Person",
       "name": "Linh Tran-Nhut"
@@ -185,6 +185,8 @@
   
   <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    
     
     <div class="flex flex-1 items-center justify-between">
         <nav class="flex space-x-3">
@@ -769,7 +771,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/202504-install/&amp;title=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:32959/posts/202504-install/&amp;title=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -788,7 +790,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/202504-install/&amp;text=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
+      href="https://twitter.com/intent/tweet/?url=http://localhost:32959/posts/202504-install/&amp;text=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -806,7 +808,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/202504-install/&amp;resubmit=true&amp;title=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
+      href="https://api.whatsapp.com/send?text=http://localhost:32959/posts/202504-install/&amp;resubmit=true&amp;title=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
       title="Share via WhatsApp"
       aria-label="Share via WhatsApp"
       >
@@ -825,7 +827,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=http://localhost:1313/posts/202504-install/&amp;resubmit=true&amp;title=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
+      href="https://t.me/share/url?url=http://localhost:32959/posts/202504-install/&amp;resubmit=true&amp;title=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
       title="Share via Telegram"
       aria-label="Share via Telegram"
       >
@@ -844,7 +846,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/202504-install/&amp;description=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:32959/posts/202504-install/&amp;description=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
       title="Pin on Pinterest"
       aria-label="Pin on Pinterest"
       >
@@ -863,7 +865,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=http://localhost:1313/posts/202504-install/&amp;resubmit=true&amp;title=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
+      href="https://reddit.com/submit/?url=http://localhost:32959/posts/202504-install/&amp;resubmit=true&amp;title=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -882,7 +884,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/202504-install/&amp;quote=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
+      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:32959/posts/202504-install/&amp;quote=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -901,7 +903,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=http://localhost:1313/posts/202504-install/&amp;subject=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
+      href="mailto:?body=http://localhost:32959/posts/202504-install/&amp;subject=Install%20Wazuh%20and%20Wazuh%20Agent%20by%20Ansible"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -931,7 +933,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.png);"></div>
         
       
 
@@ -1077,7 +1079,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.png);"></div>
         
       
 
@@ -1169,7 +1171,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/banner.png);"></div>
         
       
 
@@ -1255,164 +1257,6 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
   </a>
 
   
-  
-
-  <a href="/posts/202109-the-future-of-nintendo/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/202109-the-future-of-nintendo/feature.jpeg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/202109-the-future-of-nintendo/">The Future of the Nintendo Switch</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2021-09-09T00:00:00&#43;00:00">9 September 2021</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-     <div style="cursor: pointer;" onclick="window.open(&#34;/authors/nunocoracao/&#34;,'_self');return false;">Nunocoracao</div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/strategy/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Strategy
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/product/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Product
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nintendo/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Nintendo
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/switch/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Switch
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/disruptive-innovation/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Disruptive Innovation
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
 </section>
 
   
@@ -1471,6 +1315,28 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/202109-the-future-of-nintendo/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Installing Kafka Exporter, Postgres Exporter, Redis Exporter, HAProxy Exporter</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-03-22T00:00:00&#43;00:00">22 March 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
@@ -1565,7 +1431,7 @@ CIReVL presents a promising new direction for zero-shot CIR research. Its traini
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="http://localhost:32959/"
   style="z-index:500"
 >
   <div
